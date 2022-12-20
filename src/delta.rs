@@ -1,9 +1,12 @@
 use ae_direction::{Cardinal, Direction, Ordinal};
 use serde::{Deserialize, Serialize};
+use typeshare::typeshare;
 
 /// A single unit change in relative position meant to be added to a `Position`
 /// values intended to be either 1, 0 or -1 and transformed from a `Direction`
+#[typeshare]
 #[derive(Serialize, Deserialize, PartialEq, Clone, Debug)]
+#[serde(rename_all = "camelCase")]
 pub struct Delta {
     pub x: i8,
     pub y: i8,
