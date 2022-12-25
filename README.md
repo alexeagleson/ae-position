@@ -8,7 +8,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-ae-position = "0.1.2"
+ae-position = "0.1.4"
 ```
 # License
 

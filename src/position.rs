@@ -1,12 +1,7 @@
-use serde::{Deserialize, Serialize};
-use typeshare::typeshare;
-
 use crate::delta::{Delta, CARDINAL_DELTAS, ORDINAL_DELTAS};
 
 /// Represents the location of something on a 2D grid
-#[typeshare]
-#[derive(Serialize, Deserialize, Clone, Eq, PartialEq, Hash, Debug)]
-#[serde(rename_all = "camelCase")]
+#[derive(Clone, Eq, PartialEq, Hash, Debug)]
 pub struct Position {
     pub x: i32,
     pub y: i32,
